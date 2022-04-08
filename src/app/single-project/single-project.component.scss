@@ -1,0 +1,33 @@
+$dark-light: grey;
+$dark-lighter: rgb(172, 170, 170);
+
+.single-project {
+    padding: 10px;
+    border: 1px solid rgba(199, 196, 196, 0.445);
+
+
+  .project-title{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+    img {
+      margin-right: 15px;
+      height: 25px;
+    }
+  }
+
+  .project-content {
+    
+    .content {
+      color: $dark-light;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    .project-date {
+      color:$dark-lighter;
+      font-size: 0.7rem;
+    }
+  }
+  
+}

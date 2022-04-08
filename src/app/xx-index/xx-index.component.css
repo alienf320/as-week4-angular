@@ -1,0 +1,31 @@
+.index-title {
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.index-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+.index-info .index-info-detail h6 {
+  color: grey;
+  font-size: 0.7rem;
+}
+
+.index-info .index-info-detail p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 15px;
+  height: 190px;
+}
+/*# sourceMappingURL=xx-index.component.css.map */

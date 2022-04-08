@@ -1,0 +1,13 @@
+<div class="single-project" *ngFor="let project of projects">
+  <div class="project-title">
+    <img
+      src= {{project.logo}}
+      alt=""
+    />
+    <div class="small-title">{{project.title}}</div>
+  </div>
+  <div class="project-content">
+    <div class="content">{{project.content}}</div>
+    <div class="project-date">{{project.date}}</div>
+  </div>
+</div>

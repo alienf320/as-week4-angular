@@ -1,0 +1,10 @@
+.team-title {
+  padding: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgrey;
+}
+
+app-member {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

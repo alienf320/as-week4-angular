@@ -1,0 +1,13 @@
+.team-title {
+  padding: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid lightgrey;
+}
+
+app-member {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+/*# sourceMappingURL=team.component.css.map */

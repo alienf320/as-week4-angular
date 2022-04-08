@@ -1,0 +1,97 @@
+
+$dark-light: grey;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+  height: 40px;
+  background-color: rgb(9, 9, 70);
+  color: white;
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 10vw;
+  }
+  
+}
+
+.statistics-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: 
+    "a a"
+    "b c";
+
+  margin: 0 auto;
+  padding: 10px auto;  
+
+  background-color: white;
+
+  #navbar {
+    grid-area: a;    
+    margin: 10px 0;
+    font-size: 0.9;
+    color: gray;
+  }
+
+  #presentation {
+    grid-area: b;
+    display: grid;
+    grid-template-areas: "a b" "a c";
+    align-items: center;
+
+    height: 100px;
+
+    img {    
+      grid-area: a;
+      height: 70px;
+      padding: 0 10px;
+      
+    }
+
+    h4 {
+      grid-area: b;
+      padding: 0 10px;
+      font-weight: 400;
+    }
+
+    p {
+      grid-area: c;
+      padding: 0 10px;
+      color: $dark-light;
+      font-size: 0.8rem;
+    }
+  }
+
+  #statistics {
+    grid-area: c;
+    padding: 10px;
+
+    display: flex;
+    gap: 15px;
+
+    h6 {
+      font-size: 0.7rem;
+      color: $dark-light;
+      margin-bottom: 10%;
+    }
+
+    .data-info-number {
+      font-size: 1.3rem;
+      width: 100%;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    span {
+      color:$dark-light;
+      font-size: 0.9rem;
+    }
+  }  
+}

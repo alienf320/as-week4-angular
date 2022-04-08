@@ -1,0 +1,26 @@
+.index-title {
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+.index-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0;
+
+  .index-info-detail {
+    h6 {
+      color: grey;
+      font-size: 0.7rem;
+    }
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
+img {
+  margin-top: 15px;
+  height: 190px;
+}
