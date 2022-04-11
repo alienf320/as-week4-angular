@@ -42,6 +42,14 @@
   color: gray;
 }
 
+.statistics-container #navbar a:visited {
+  color: inherit;
+}
+
+.statistics-container #navbar span {
+  color: black;
+}
+
 .statistics-container #presentation {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -52,7 +60,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  margin: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .statistics-container #presentation img {
@@ -92,6 +103,10 @@
   gap: 15px;
 }
 
+.statistics-container #statistics .data-info-container {
+  padding: 10px;
+}
+
 .statistics-container #statistics h6 {
   font-size: 0.7rem;
   color: grey;
@@ -109,5 +124,29 @@
 .statistics-container #statistics span {
   color: grey;
   font-size: 0.9rem;
+}
+
+.statistics-container #statistics .data-info-container:nth-child(2) {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .statistics-container #navbar {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 /*# sourceMappingURL=bar.component.css.map */

@@ -19,8 +19,36 @@
     }
   }
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+  img {
+    object-fit: contain;
+    margin: 15px auto;
+    max-height: 190px;
+  }
+}
 
-img {
-  margin-top: 15px;
-  height: 190px;
+@media (max-width: 1024px) {
+  .index-title {
+    flex-basis: 100%;
+  }
+  .index-info {
+    flex-direction: column;
+
+    h6 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .index-title {
+    flex-basis: auto;
+  }
+  .index-info {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
 }

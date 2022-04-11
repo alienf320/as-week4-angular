@@ -4,7 +4,6 @@
 }
 
 .projects-container {
-  width: 55vw;
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 
@@ -21,4 +20,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 550px) {
+  .projects-container {
+    app-single-project {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: (repeat(3, 1fr));
+    }
+  }
+  
 }

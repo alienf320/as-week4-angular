@@ -4,11 +4,12 @@ main {
   margin: 0 auto;
   gap: 20px;
   margin: 25px auto; 
+  justify-content: space-around;
 
   .main-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 65%;
   }
 
   .right-panel {
@@ -16,6 +17,7 @@ main {
     flex-direction: column;
     gap: 25px;
     margin-top: 7px;
+    width: 35%;
   }
 }
 
@@ -36,4 +38,44 @@ app-xx-index {
 
 app-team {
   background-color: white;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  main {
+    display: block;
+
+    .main-panel {
+      width: 100%;
+    }
+  
+    .right-panel {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-top: 20px;
+
+      app-xx-index {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  app-xx-index {
+    flex-direction: column;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .right-panel {
+      flex-direction: column;
+    }
+  }
+  
 }

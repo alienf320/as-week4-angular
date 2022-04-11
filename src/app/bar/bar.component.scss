@@ -16,8 +16,7 @@ $dark-light: grey;
 
   span {
     margin-left: 10vw;
-  }
-  
+  }  
 }
 
 .statistics-container {
@@ -38,6 +37,14 @@ $dark-light: grey;
     margin: 10px 0;
     font-size: 0.9;
     color: gray;
+
+    a:visited {
+      color: inherit;
+    }
+
+    span {
+      color: black;
+    }
   }
 
   #presentation {
@@ -45,8 +52,8 @@ $dark-light: grey;
     display: grid;
     grid-template-areas: "a b" "a c";
     align-items: center;
-
-    height: 100px;
+    margin: 10px;
+    height: fit-content;
 
     img {    
       grid-area: a;
@@ -76,6 +83,10 @@ $dark-light: grey;
     display: flex;
     gap: 15px;
 
+    .data-info-container {
+        padding: 10px;      
+    }
+
     h6 {
       font-size: 0.7rem;
       color: $dark-light;
@@ -93,5 +104,25 @@ $dark-light: grey;
       color:$dark-light;
       font-size: 0.9rem;
     }
+
+    .data-info-container:nth-child(2) {
+      //.data-info-number {
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+      //}
+      
+    }
   }  
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #navbar {
+      align-self: flex-start;
+    }
+  }
 }

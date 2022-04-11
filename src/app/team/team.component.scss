@@ -8,3 +8,11 @@ app-member {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+
+@media (max-width: 768px) {
+  app-member {
+    display: flex;
+    flex-direction: column;
+  }
+}
